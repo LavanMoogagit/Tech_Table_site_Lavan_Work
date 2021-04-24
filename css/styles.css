@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+	margin-right: 0px;
+	padding: 0;
+	/* box-sizing: border-box; */
+	font-family: 'Poppins', sans-serif;
+}
+/* .body {
+	margin-right: 5px;
+} */
+
+body,
+html {
+	/* height: 100%; */
+	/* width: auto; */
+	/* margin: 0; */
+	margin-right: 0px;
+}
+:root {
+	background-color: white;
+	margin-right: 15px;
+}
+
+#home {
+	/* display: none; */
+	display: block;
+	background-image: url(../bg_index.jpg);
+	/* Full height */
+	height: 100vh;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: -ms-page;
+	width: 100%;
+	/* width: 100vh; */
+	min-height: 250px;
+}
+.coloring {
+	color: black;
+}
+
+.jumbotron {
+	padding: 0px;
+	margin-bottom: 0rem;
+}
+/* li {
+	float: right;
+}
+
+li a {
+	display: flex;
+	color: red;
+	height: 70px;
+	text-align: right;
+	padding: auto;
+	font-size: 30px;
+	text-decoration: none;
+	font-weight: 500;
+	box-shadow: 2px;
+}
+
+li a:hover {
+	color: blue;
+} */
+.bada-line,
+.bada-line-prgm {
+	color: purple;
+	font-size: 35px;
+}
+.bada-line:hover {
+	color: blue;
+}
+.chota-line {
+	color: purple;
+	font-size: 30px;
+}
+
+.programCards {
+	min-height: 430px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding-bottom: 8px;
+}
+.programCards img {
+	min-width: 150px;
+	min-height: 100px;
+}
+h2 {
+	line-height: 1;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+}
+
+h3 {
+	position: relative;
+	font-family: calibri;
+	letter-spacing: 2px;
+	color: white;
+	text-align: center;
+}
+.content-wrap {
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+.card-title {
+	font-size: x-large;
+	font-weight: 700;
+	color: rgb(42, 6, 245);
+}
+.card-text {
+	font-size: medium;
+	font-weight: 400;
+	color: black;
+}
+.button {
+	background-color: purple;
+	border: none;
+	color: white;
+	padding: 6px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 10px;
+}
+#programs {
+	/* display: none; */
+	padding: 10px;
+	height: 100vh;
+	background-color: honeydew;
+	min-height: 720px;
+	display: inline-table;
+}
+
+#mentorForm {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: rgb(181, 179, 250);
+	display: inline-table;
+	position: relative;
+}
+
+.mentor {
+	justify-content: center;
+	align-items: center;
+	display: block;
+	background-color: rgb(181, 179, 250);
+}
+
+.containerForm {
+	padding: 25px 30px;
+	border-radius: 5px;
+}
+
+.containerForm .title {
+	font-size: 22px;
+	font-weight: 700;
+	padding-left: 15px;
+}
+.containerForm form .user-details {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px 0 0px 0;
+	justify-content: space-between;
+}
+form .user-details .input-box {
+	margin-bottom: 15px;
+	width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	color: #ff3333;
+}
+.user-details .input-box textarea,
+.user-details .input-box input {
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+}
+.user-details .input-box textarea {
+	height: 100px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+	border-color: #fc0606;
+}
+
+form .buttonForm {
+	height: 45px;
+	margin: 45px 0;
+}
+form .buttonForm input {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	color: red;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: linear-gradient(135deg, #0490ec, #00fd0d);
+}
+form .button input:hover {
+	background: linear-gradient(-135deg, #0490ec, #00fd0d);
+}
+@media (max-width: 584px) {
+	form .user-details .input-box {
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.container form .user-details {
+		max-height: auto;
+		overflow-y: unset;
+	}
+	.user-details::-webkit-scrollbar {
+		width: 0;
+	}
+}
+
+#contact {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	background-color: white;
+	display: inline-table;
+	position: relative;
+}
+
+#testimonials {
+	background-color: #343434;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+@media (min-width: 1200px) {
+	.containerForm {
+		max-width: 1325px;
+	}
+}
+@media (max-width: 480px) {
+	.m-5 {
+		margin: 0rem !important;
+	}
+	.bada-line,
+	.bada-line-prgm {
+		font-size: 25px;
+	}
+	.chota-line {
+		font-size: 20px;
+	}
+}
+@media (max-width: 355px) {
+	.bada-line {
+		font-size: 20px;
+		float: left;
+		text-align: left;
+		font-weight: 700;
+		line-height: 3rem;
+	}
+	.chota-line {
+		font-size: 15px;
+		float: left;
+		text-align: left;
+		font-weight: 700;
+		line-height: 3.5rem;
+	}
+}
+@media (max-width: 235px) {
+	.cart-title {
+		font-size: 15px;
+	}
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: red;
+	color: #fff;
+}
+.brand-title {
+	font-size: 2.5rem;
+	margin: 2rem;
+}
+@media (max-width: 400px) {
+	.brand-title {
+		margin: 1rem;
+	}
+}
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.navbar-links li {
+	list-style: none;
+}
+
+.navbar-links li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 1rem;
+	font-size: 2rem;
+	display: block;
+}
+.navbar-links li:hover {
+	background-color: rgb(103, 207, 255);
+}
+.toggle-button {
+	position: absolute;
+	top: 3.5rem;
+	right: 6rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+@media (max-width: 450px) {
+	.toggle-button {
+		right: 3.5rem;
+		top: 3.5rem;
+	}
+}
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+@media (max-width: 1000px) {
+	.toggle-button {
+		display: flex;
+	}
+	.navbar-links {
+		display: none;
+		width: 100%;
+	}
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+	.navbar-links li {
+		text-align: center;
+	}
+	.navbar-links li a {
+		padding: 0.5rem 1rem;
+	}
+	.navbar-links.active {
+		display: flex;
+	}
+}
