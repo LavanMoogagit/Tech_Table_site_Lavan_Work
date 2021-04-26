@@ -32,9 +32,11 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: -ms-page;
-	width: 100%;
+	/* width: 100%; */
+	width: auto;
 	/* width: 100vh; */
 	min-height: 250px;
+	min-width: 350px;
 }
 .coloring {
 	color: black;
@@ -44,25 +46,6 @@ html {
 	padding: 0px;
 	margin-bottom: 0rem;
 }
-/* li {
-	float: right;
-}
-
-li a {
-	display: flex;
-	color: red;
-	height: 70px;
-	text-align: right;
-	padding: auto;
-	font-size: 30px;
-	text-decoration: none;
-	font-weight: 500;
-	box-shadow: 2px;
-}
-
-li a:hover {
-	color: blue;
-} */
 .bada-line,
 .bada-line-prgm {
 	color: purple;
@@ -82,9 +65,16 @@ li a:hover {
 	background-color: #fff;
 	padding-bottom: 8px;
 }
-.programCards img {
-	min-width: 150px;
-	min-height: 100px;
+/* .programCards .card img,
+.testimonials .card img {
+	min-width: 250px;
+	min-height: 150px;
+} */
+.card-img-top {
+	width: 100%;
+	height: auto;
+	border-top-left-radius: calc(0.25rem - 1px);
+	border-top-right-radius: calc(0.25rem - 1px);
 }
 h2 {
 	line-height: 1;
@@ -134,15 +124,19 @@ h3 {
 	background-color: honeydew;
 	min-height: 720px;
 	display: inline-table;
+	width: auto;
+	min-width: 350px;
 }
 
 #mentorForm {
 	height: 100vh;
-	width: 100%;
+	/* width: 100%; */
 	position: relative;
 	background-color: rgb(181, 179, 250);
 	display: inline-table;
 	position: relative;
+	width: auto;
+	min-width: 350px;
 }
 
 .mentor {
@@ -232,8 +226,9 @@ form .button input:hover {
 }
 
 #contact {
-	height: 100vh;
+	height: 90vh;
 	width: 100%;
+	/* width: auto; */
 	position: relative;
 	background-color: white;
 	display: inline-table;
@@ -241,9 +236,12 @@ form .button input:hover {
 }
 
 #testimonials {
-	background-color: #343434;
+	background-color: honeydew;
 	margin-left: 3px;
 	margin-right: 3px;
+	height: 120vh;
+	width: auto;
+	min-width: 350px;
 }
 @media (min-width: 1200px) {
 	.containerForm {
@@ -283,12 +281,32 @@ form .button input:hover {
 		font-size: 15px;
 	}
 }
-.navbar {
+.navbarN {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
-	background-color: red;
-	color: #fff;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	/* justify-content: space-between; */
+	padding: 0.5rem 1rem;
+
+	/* display: flex; */
+	overflow: hidden;
+	justify-content: normal;
+	z-index: 02;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	/* display: block; */
+	/* align-items: center; */
+	background-color: #ffffff;
+	color: blue;
 }
 .brand-title {
 	font-size: 2.5rem;
@@ -303,6 +321,7 @@ form .button input:hover {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-direction: row;
 }
 .navbar-links li {
 	list-style: none;
@@ -310,9 +329,10 @@ form .button input:hover {
 
 .navbar-links li a {
 	text-decoration: none;
-	color: #fff;
+	color: blue;
 	padding: 1rem;
 	font-size: 2rem;
+	font-weight: 400;
 	display: block;
 }
 .navbar-links li:hover {
@@ -324,9 +344,10 @@ form .button input:hover {
 	right: 6rem;
 	display: none;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: normal;
 	width: 30px;
 	height: 21px;
+	background-color: white;
 }
 @media (max-width: 450px) {
 	.toggle-button {
@@ -336,19 +357,43 @@ form .button input:hover {
 }
 .toggle-button .bar {
 	height: 3px;
+	margin-bottom: auto;
 	width: 100%;
-	background-color: white;
+	background-color: blue;
 	border-radius: 10px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 370px) {
+	.toggle-button {
+		right: 3.5rem;
+		top: 3.5rem;
+	}
+	.navbar-links {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.navbarN img {
+		/* margin-left: -165px; */
+		padding-left: 120px;
+	}
+}
+@media (max-width: 768px) {
 	.toggle-button {
 		display: flex;
+		top: 3rem;
+		right: 6rem;
+		margin-right: auto;
+	}
+	.navbarN {
+		position: fixed;
+	}
+	.navbarN img {
+		margin-left: 0px;
 	}
 	.navbar-links {
 		display: none;
 		width: 100%;
 	}
-	.navbar {
+	.navbarN {
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -364,5 +409,39 @@ form .button input:hover {
 	}
 	.navbar-links.active {
 		display: flex;
+	}
+
+	.navbar-links.inactive {
+		display: none;
+	}
+}
+@media (max-width: 430px) {
+	.toggle-button {
+		display: flex;
+		flex-direction: column;
+	}
+	.navbarN img {
+		padding-left: 0px;
+		top: 0rem;
+		left: 0rem;
+		height: auto;
+		width: auto;
+		/* margin-left: 30px; */
+	}
+}
+@media (max-width: 350px) {
+	/* #home .navbar img {
+		margin-left: -50px;
+	} */
+	.toggle-button {
+		margin-top: 10px;
+
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (max-width: 1px) {
+	html {
+		margin-left: auto;
 	}
 }

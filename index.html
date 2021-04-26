@@ -16,6 +16,9 @@
 
 	<title>TechTable</title>
   <style>
+    /* *{
+      border: 1px solid #f00 !important
+    } */
     .navbar{
       margin-bottom: 0;
       border-radius: 0;
@@ -23,38 +26,40 @@
     html,body{
       margin: 0;
       padding: 0;
+      /* overflow-x:auto; */
+      /* overflow-y:hidden; */
+      scrollbar-width: 0px;
     }
 
   </style>
 </head>
 <body style="scrollbar-width: none;">
- <div id="home" class="jumbotron bg">
-       
-          <nav class="navbar">
-            <div class="brand-title">
-              <h2 style="font-size: xx-large;"><b>Tech&nbsp;Table</b></h1>                
+ <div id="home" class="bg" style="margin: 0;">
+          <nav class="navbarN navbar-default" style="width: 100%;">
+            <div style="left: 0rem; top: 0rem;">
+              <img class="logo" style="border-radius: 5px;" src="./images/TT logo.png"  alt="TT logo" />
             </div>
               <a href="#" class="toggle-button">
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
               </a>
-            <div class="navbar-links">
+            <div class="navbar-links" >
               <ul>
                   <li><a href="#home" class="active">Home</a></li>
                   <li><a href="#programs">Programs</a></li>
-                  <li><a href="#mentorForm">Mentor Form</a></li>
+                  <li><a href="#mentorForm" >Mentor Form</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
                   <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
 
-        <div class="content-wrap pt-5 typewriter text-center">
-          <h2  class="pt-5 bada-line"><b>Join The&nbsp;Mentorship, Be&nbsp;The&nbsp;Expert</b></h1>  
-          <h3 style="color:purple;" class="pt-3 chota-line"><b>From Zero&nbsp;to&nbsp;Hero</b></h2>
+        <div class="content-wrap pt-5 typewriter text-center" >
+          <h2  class="pt-5 bada-line" style="margin-top: 80px;"><b>Join&nbsp;Mentorship, Be&nbsp;The&nbsp;Expert&nbsp;From Zero&nbsp;to&nbsp;Hero</b></h2>  
         </div>
   </div>
-  <div id="programs" style="padding-top: 20px;">
+  <div id="programs" style="padding-top: 120px; width: 100%;">
     <h2 style="color:purple;" class="bada-line-prgm">OUR&nbsp;PROGRAMS</h2>  
        <div class="card-deck">
           <div class="col-md-6 col-lg-6 col-xl-3 col-sm-12 p-3">
@@ -99,7 +104,8 @@
           </div>
        </div>
   </div>
-  <div id="mentorForm">
+	
+  <div id="mentorForm"  style="padding-top: 80px;width: 100%;background-color: rgb(181, 179, 250);  ">
     <div class="containerForm mentor">
       <div class="row title">    
         <h2 style="color:purple;" class="bada-line-prgm">Mentor&nbsp;Form</h2>  
@@ -142,7 +148,49 @@
     </div>
   </div>
   
-  <div id="contact"> 
+  
+  <div id="testimonials" style="padding-top: 120px;width: 100%;">
+    <h2 class="text-center bada-line-prgm"><a href="#" style="color:#fd1109;">Student Testimonials<a></h2>
+    <div class="card-deck m-5">
+    <div class="col-md-6 col-lg-3 col-sm-12 p-3">
+    <div class="card ">
+      <img class="card-img-top" src="./Images/person.jpg" alt="personimgs">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Kristine Stuart </h5>
+        <p class="card-text">"Hello, everyone! I'm Stuart.It is awesome with TechTable.You too join quickly"</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-sm-12 p-3">
+    <div class="card ">
+      <img class="card-img-top" src="./Images/person2.jpg" alt="personimgs">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Alex Hales</h5>
+        <p class="card-text">"Hello, everyone! I'm Hales.It is awesome with TechTable. You too join quickly"</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 col-sm-12 p-3">
+    <div class="card">
+      <img class="card-img-top" src="./Images/person3.jpg" alt="personimgs">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Chris Gayle</h5>
+        <p class="card-text">"Hello, everyone! I'm Chris.It is awesome with TechTable. You too join quickly"</p>
+      </div>
+    </div>
+  </div>
+    <div class="col-md-6 col-lg-3 col-sm-12 p-3">
+    <div class="card">
+      <img class="card-img-top" src="./Images/person4.jpg" alt="personimgs">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Laura Joe</h5>
+        <p class="card-text">"Hello, everyone! I'm Laura.It is awesome with TechTable. you too join quickly"</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="contact" style="padding-top: 80px;width: 100%;"> 
 
     <div class="row title">    
       <h2 style="color:purple;margin: auto; padding-top: 20px; text-align: center;" class="bada-line-prgm">Contact&nbsp;Us</h2>  
@@ -217,7 +265,7 @@
 		</div>
   </div>
   
-  <footer style="vertical-align: bottom;">
+  <footer style="vertical-align: bottom;width: 100%;">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 1.35rem;">
       © 2021 Copyright:
       <a class="text-success" style="font-size: 1.35rem;" href="https://techtable.co.in/">Techtable.com</a>
