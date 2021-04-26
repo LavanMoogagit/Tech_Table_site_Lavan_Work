@@ -42,6 +42,13 @@ html {
 	color: black;
 }
 
+.a {
+	display: flex;
+}
+.b {
+	display: none;
+}
+
 .jumbotron {
 	padding: 0px;
 	margin-bottom: 0rem;
@@ -299,10 +306,10 @@ form .button input:hover {
 	/* display: flex; */
 	overflow: hidden;
 	justify-content: normal;
-	z-index: 02;
+	z-index: 1;
 	position: fixed;
-	top: 0rem;
-	left: 0rem;
+	/* top: 0rem; */
+	/* left: 0rem; */
 	/* display: block; */
 	/* align-items: center; */
 	background-color: #ffffff;
@@ -376,6 +383,7 @@ form .button input:hover {
 		padding-left: 120px;
 	}
 }
+
 @media (max-width: 768px) {
 	.toggle-button {
 		display: flex;
@@ -409,10 +417,7 @@ form .button input:hover {
 	}
 	.navbar-links.active {
 		display: flex;
-	}
-
-	.navbar-links.inactive {
-		display: none;
+		flex-direction: column;
 	}
 }
 @media (max-width: 430px) {
